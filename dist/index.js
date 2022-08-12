@@ -7,7 +7,7 @@ const body_parser_1 = __importDefault(require("body-parser"));
 const server_1 = __importDefault(require("./classes/server"));
 const routes_1 = __importDefault(require("./routes/routes"));
 const cors_1 = __importDefault(require("cors"));
-const server = new server_1.default();
+const server = server_1.default.instance;
 //Rutas de servicios
 server.app.use("/", routes_1.default);
 //BodyParser
